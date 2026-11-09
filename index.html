@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple four-operation calculator built with HTML, CSS and JavaScript.">
+  <title>Four Operations Calculator | EdBytes Task 5</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <section class="calculator" aria-labelledby="page-title">
+      <p class="eyebrow">EDBYTES · MILESTONE 5</p>
+      <h1 id="page-title">Four Operations</h1>
+      <p class="subtitle">A simple calculator for everyday arithmetic.</p>
+
+      <div class="field">
+        <label for="a">First number</label>
+        <input id="a" type="number" step="any" inputmode="decimal" placeholder="Enter first number">
+      </div>
+      <div class="field">
+        <label for="b">Second number</label>
+        <input id="b" type="number" step="any" inputmode="decimal" placeholder="Enter second number">
+      </div>
+
+      <div class="operations" id="operations" aria-label="Calculator operations">
+        <button type="button" data-op="+" class="operation">Add <span>+</span></button>
+        <button type="button" data-op="-" class="operation">Subtract <span>−</span></button>
+        <button type="button" data-op="*" class="operation">Multiply <span>×</span></button>
+        <button type="button" data-op="/" class="operation">Divide <span>÷</span></button>
+      </div>
+
+      <div class="result-panel" aria-live="polite">
+        <span class="result-label">RESULT</span>
+        <p id="result">Your answer will appear here.</p>
+      </div>
+      <button type="button" id="clear" class="clear-button">Clear inputs</button>
+      <p class="footer-note">Built with HTML, CSS and JavaScript</p>
+    </section>
+  </main>
+</body>
+</html>
